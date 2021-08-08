@@ -6,7 +6,7 @@ usuario:{
 	foto1,
 	foto2,
 	foto3,
-	ala,
+	tipo_ala,
 	tipo_morador,
 	tem_veia,
 	descricao,
@@ -20,8 +20,11 @@ usuario:{
 		ala_feminina,
 		ala_masculina,
 	}
+
+	permissao:(admin,morador,exmorador),
+
+	ultimo_login: Date,
 	ativo:Boolean,
-	
 	visualizadas:[id_usuario],
 	matches:[id_usuario],
 }
