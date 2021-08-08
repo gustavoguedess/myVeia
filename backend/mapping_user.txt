@@ -1,0 +1,27 @@
+usuario:{
+	id,
+	nome,
+	data_nasc,
+	documento,
+	foto1,
+	foto2,
+	foto3,
+	ala,
+	tipo_morador,
+	tem_veia,
+	descricao,
+	whatsapp,
+
+	filtro:{
+		veterano,
+		calouro,
+		com_veia,
+		sem_veia,
+		ala_feminina,
+		ala_masculina,
+	}
+	ativo:Boolean,
+	
+	visualizadas:[id_usuario],
+	matches:[id_usuario],
+}
