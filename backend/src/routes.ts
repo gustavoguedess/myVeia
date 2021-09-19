@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { CreateUserController } from "./controllers/CreateUserController";
 
 const router = Router()
 
@@ -26,7 +27,8 @@ router.get('/users/:id/next_user', (req, res) => {});
 //Rota checar Admin
 router.get('/users/check_admin/:id', (req, res) => {});
 //Rota criar usuários
-router.post('/users/create/', (req, res) => {});
+const createUserController = new CreateUserController();
+router.post('/users', createUserController.handle);
 //Rota dar Admin
 router.put('/users/admin/:id', (req, res) => {});
 //Rota remover Admin

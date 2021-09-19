@@ -28,7 +28,7 @@ yarn ts-node-dev -D
 }
 # Regras 
 - Cadastro de Usuários
-  - [ ] Para cadastrar é preciso somente o Nome, documento e data de nascimento
+  - [ x ] Para cadastrar é preciso somente o Nome, documento e data de nascimento
   - [ ] A senha padrão é a data de nascimento.
   - [ ] A senha tem que ser criptografada
 
@@ -43,6 +43,7 @@ yarn ts-node-dev -D
   - [ ] Não é permitido logar usuário exmorador
   - [ ] O login do usuário é o documento
   - [ ] A senha padrão é a data de nascimento
+  - [ ] Ativa a conta
 
 - Rotinas
   - [ ] Quando passados 5 meses do último login o usuário é inativado
@@ -52,3 +53,14 @@ yarn ts-node-dev -D
 
 - Match
   - [ ] Quando ambos derem match, aparece a tela de match
+
+<br>
+## Camadas
+- Repository
+  Gerencia o banco de dados utilizando as entidades. Faz toda comunicação (criação, )
+
+- Services
+  Camada de Serviço. Fica as regras da aplicação. Validação, verificação.
+
+- Controller
+  Camada de controle. Comunica entre o server e o service. Gerencia o Request e o Response. Funcionamento da Rota

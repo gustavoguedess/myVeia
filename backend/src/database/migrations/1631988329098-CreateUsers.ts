@@ -1,6 +1,7 @@
 import { query } from "express";
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
+
 export class CreateUsers1631988329098 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
@@ -27,55 +28,63 @@ export class CreateUsers1631988329098 implements MigrationInterface {
                     },
                     {
                         name: "foto1",
-                        type: "blob"
+                        type: "blob",
+                        isNullable: true,
                     },
                     {
                         name: "foto2",
-                        type: "blob"
+                        type: "blob",
+                        isNullable: true,
                     },
                     {
                         name: "foto3",
-                        type: "blob"
+                        type: "blob",
+                        isNullable: true,
                     },
                     {
                         name: "tipo_ala",
-                        type: "varchar"
+                        type: "varchar",
+                        isNullable: true,
                     },
                     {
-                        name: "tipo_morador",
-                        type: "varchar"
+                        name: "tipo",
+                        type: "varchar",
+                        isNullable: true,
                     },
                     {
                         name: "tem_veia",
                         type: "boolean",
-                        default: false
+                        default: false,
                     },
                     {
                         name: "descricao",
-                        type: "varchar"
+                        type: "varchar",
+                        isNullable: true,
                     },
                     {
                         name: "whatsapp",
                         type: "varchar",
+                        isNullable: true,
                     },
                     {
                         name: "permissao",
-                        type: "varchar"
+                        type: "varchar",
+                        isNullable: true,
                     },
                     {
                         name: "criado_em",
                         type: "timestamp",
-                        default: "now()"
+                        default: "now()",
                     },
                     {
                         name: "ultimo_login",
                         type: "timestamp",
-                        default: "now()"
+                        default: "0",
                     },
                     {
                         name: "ativo",
                         type: "boolean",
-                        default: false
+                        default: false,
                     }
                 ]
             })

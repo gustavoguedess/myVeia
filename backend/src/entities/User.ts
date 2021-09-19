@@ -1,6 +1,15 @@
 import {Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn} from "typeorm";
 import { v4 as uuid } from "uuid";
 
+export enum UserTipo_ala {
+    MASCULINA = "Masculina",
+    FEMININA = "Feminina",
+}
+export enum UserTipo {
+    MORADOR = "Morador",
+    EXMORADOR = "Exmorador",
+    ADMIN = "admin",
+}
 @Entity("usuarios")
 class User {
     @PrimaryColumn()
@@ -20,31 +29,31 @@ class User {
     foto2:
     foto3:
     */
-    @Column()
+    @Column({ default: "Masculina" })
     tipo_ala: string;
 
-    @Column()
-    tipo_morador: string;
+    @Column({ default: "Veterano" })
+    tipo: string;
 
-    @Column()
+    @Column({ type: 'boolean', default: false })
     tem_veia: boolean;
 
-    @Column()
+    @Column({ default: "" })
     descricao: string;
 
-    @Column()
+    @Column({ default: "" })
     whatsapp: string;
 
-    @Column()
+    @Column({ default: "Morador" })
     permissao: string;
 
     @CreateDateColumn()
     criado_em: Date;
 
-    @UpdateDateColumn()
+    @CreateDateColumn()
     ultimo_login: Date;
 
-    @Column()
+    @Column({ type: 'boolean', default: false })
     ativo: boolean;
     
     constructor() {
