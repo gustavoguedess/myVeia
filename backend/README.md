@@ -28,54 +28,27 @@ yarn ts-node-dev -D
 }
 # Regras 
 - Cadastro de Usuários
-
-
- - [ ] Para cadastrar é preciso somente o Nome, documento e data de nascimento
-
-  [ ] A senha padrão é a data de nascimento.
-
-  [ ] A senha tem que ser criptografada
+  - [ ] Para cadastrar é preciso somente o Nome, documento e data de nascimento
+  - [ ] A senha padrão é a data de nascimento.
+  - [ ] A senha tem que ser criptografada
 
 - Cadastrar Multiplos Usuários
-  
-  [ ] Somente Admin cadastra múltiplos usuários
-
-  [ ] É preciso mandar uma lista de usuários no formato Nome,documento,data_nasc
-
-  [ ] Usuários com documento já cadastrado não terão alteração
-
-  [ ] Usuários com documento não cadastrado serão criados com permissão de morador
-
-  [ ] Usuários com documentos fora da lista deverão receber a permissão de exmorador
+  - [ ] Somente Admin cadastra múltiplos usuários
+  - [ ] É preciso mandar uma lista de usuários no formato Nome,documento,data_nasc
+  - [ ] Usuários com documento já cadastrado não terão alteração
+  - [ ] Usuários com documento não cadastrado serão criados com permissão de morador
+  - [ ] Usuários com documentos fora da lista deverão receber a permissão de exmorador
 
 - Login de Usuário
-
-  [ ] Não é permitido logar usuário exmorador
-  
-  [ ] O login do usuário é o documento
-
-  [ ] A senha padrão é a data de nascimento
+  - [ ] Não é permitido logar usuário exmorador
+  - [ ] O login do usuário é o documento
+  - [ ] A senha padrão é a data de nascimento
 
 - Rotinas
-
-  [ ] Quando passados 5 meses do último login o usuário é inativado
+  - [ ] Quando passados 5 meses do último login o usuário é inativado
 
 - Visualizações
-
-  [ ] Fulano A visualiza Fulano B 
+  - [ ] Fulano A visualiza Fulano B 
 
 - Match
-  
-  [ ]
-
-### Solar System Exploration, 1950s – 1960s
-
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+  - [ ] Quando ambos derem match, aparece a tela de match
