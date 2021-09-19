@@ -1,4 +1,7 @@
-
+<h2 align="center">
+  🚧  NodeJS 🚀 em Construção  🚧
+</h2>
+<br>
 # Instalando dependências
 yarn install
 
@@ -26,7 +29,8 @@ yarn ts-node-dev -D
 # Regras 
 - Cadastro de Usuários
 
-  [ ] Para cadastrar é preciso somente o Nome, documento e data de nascimento
+
+ - [ ] Para cadastrar é preciso somente o Nome, documento e data de nascimento
 
   [ ] A senha padrão é a data de nascimento.
 
@@ -55,3 +59,23 @@ yarn ts-node-dev -D
 - Rotinas
 
   [ ] Quando passados 5 meses do último login o usuário é inativado
+
+- Visualizações
+
+  [ ] Fulano A visualiza Fulano B 
+
+- Match
+  
+  [ ]
+
+### Solar System Exploration, 1950s – 1960s
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
